@@ -52,3 +52,17 @@ management:
       show-details: always
     env:
       keys-to-sanitize: ""
+
+# Eureka 설정
+eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: ${HOST_IP:localhost}
+    hostname: ${HOST_IP:localhsot}
+    instance-id: ${spring.application.name}:${HOST_IP:localhhost}:${server.port}
+    non-secure-port: ${PORT:8081}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka/}
