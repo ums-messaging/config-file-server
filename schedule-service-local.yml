@@ -1,9 +1,9 @@
 spring:
   config:
     import:
-      - configserver:kafka.yml
-      - configserver:redis.yml
-      - configserver:datasource.yml
+      - configserver:./kafka.yml
+      - configserver:./redis.yml
+      - configserver:./datasource.yml
 myapp:
   mail:
     host: test@test.com
