@@ -1,9 +1,9 @@
 spring:
-  config:
-    import:
-      - optional:https://ums-config-file-bucket.s3.ap-northeast-2.amazonaws.com/ums-config-file/kafka.yml
-      - optional:https://ums-config-file-bucket.s3.ap-northeast-2.amazonaws.com/ums-config-file/redis.yml
-      - optional:https://ums-config-file-bucket.s3.ap-northeast-2.amazonaws.com/ums-config-file/datasource.yml
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:/app/db/schedule;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password:
 myapp:
   mail:
     host: test@test.com
