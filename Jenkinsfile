@@ -35,6 +35,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
+                    aws s3 cp /data/jenkins_home/workspace/config-file-server/ s3://ums-config-file-bucket/ums-config-file/ --recursive
+                    curl -X POST http://config-server:8888/actuator/busrefresh
                 '''
             }
         }
