@@ -51,9 +51,9 @@ management:
 eureka:
   instance:
     prefer-ip-address: true
-    ip-address: ${HOST_IP:localhost}
-    hostname: ${HOST_IP:localhsot}
-    instance-id: ${spring.application.name}:${HOST_IP:localhost}:${server.port}
+    ip-address: ${host_ip:localhost}
+    hostname: ${host_ip:localhsot}
+    instance-id: ${spring.application.name}:${host_ip:localhost}:${server.port}
     non-secure-port: ${PORT:8081}
   client:
     register-with-eureka: true

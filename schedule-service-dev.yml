@@ -10,3 +10,4 @@ myapp:
     port: 2222
     username: jang314
     password: jang314
+host_ip: 10.0.0.137
