@@ -1,6 +1,6 @@
 spring:
   kafka:
-    bootstrap-servers: ${KAKFA_URL:localhost:9094}
+    bootstrap-servers: ${KAKFA_URL:test:9094}
     producer:
       key-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
       value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
