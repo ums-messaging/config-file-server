@@ -1,9 +1,9 @@
 spring:
   config:
     import:
-      - optional:file:./kafka.yml
-      - optional:file:./redis.yml
-      - optional:file:./datasource.yml
+      - optional:https://ums-config-file-bucket.s3.ap-northeast-2.amazonaws.com/ums-config-file/kafka.yml
+      - optional:https://ums-config-file-bucket.s3.ap-northeast-2.amazonaws.com/ums-config-file/redis.yml
+      - optional:https://ums-config-file-bucket.s3.ap-northeast-2.amazonaws.com/ums-config-file/datasource.yml
 myapp:
   mail:
     host: test@test.com
