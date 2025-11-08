@@ -1,0 +1,17 @@
+logging:
+  file:
+    name: /app/logs/app.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:.ss.SSS} %-5level [%thread] %logger{36} - %msg%n"
+  level:
+    root: INFO
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,env,refresh,metrics,busrefresh
+  endpoint:
+    health:
+      show-details: always
+    env:
+      keys-to-sanitize: ""
