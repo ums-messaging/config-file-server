@@ -53,8 +53,8 @@ eureka:
     prefer-ip-address: true
     ip-address: ${host_ip:localhost}
     hostname: ${host_ip:localhsot}
-    instance-id: ${spring.application.name}:${host_ip:localhost}:${server.port}
-    non-secure-port: ${PORT:9090}
+    instance-id: ${spring.application.name}:${host_ip:localhost}:${random.value}
+    non-secure-port: ${server.port}
   client:
     register-with-eureka: true
     fetch-registry: true
