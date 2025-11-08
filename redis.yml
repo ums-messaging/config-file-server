@@ -1,6 +1,0 @@
-spring:
-  data:
-    redis:
-      host: ${REDIS_IP:localhost}
-      port: 6397
-#      host: 10.0.0.138
