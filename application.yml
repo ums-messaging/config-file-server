@@ -1,6 +1,6 @@
 spring:
   kafka:
-    bootstrap-servers: kafka:${KAFKA_PORT}
+    bootstrap-servers: kafka:9092
     producer:
       key-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
       value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
