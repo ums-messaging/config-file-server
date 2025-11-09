@@ -42,6 +42,8 @@ management:
       exposure:
         include: health,info,env,refresh,metrics,busrefresh
   endpoint:
+    shutdown:
+      enabled: true
     health:
       show-details: always
     env:
