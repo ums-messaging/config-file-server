@@ -51,7 +51,8 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,env,refresh,metrics,busrefresh,httpexchanges
+        # include: health,info,env,refresh,metrics,busrefresh,httpexchanges
+        include: "*"
   endpoint:
     shutdown:
       enabled: true
