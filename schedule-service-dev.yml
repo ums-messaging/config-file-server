@@ -6,7 +6,7 @@ spring:
     password:
 myapp:
   mail:
-    host: test12@test.com
-    port: 3333
-    username: jang317
-    password: jang317
+    host: test123@test.com
+    port: 4567
+    username: jang000
+    password: jang000
