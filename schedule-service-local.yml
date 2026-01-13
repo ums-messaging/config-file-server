@@ -7,12 +7,12 @@ spring:
   kafka:
     bootstrap-servers: kafka:9094
     producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      key-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+      value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
     consumer:
       group-id: test-group
-      key-deserializer: org.apache.kafka.common.serialization.StringSerializer
-      value-deserializer: org.apache.kafka.common.serialization.StringSerializer
+      key-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
   h2:
     console:
       enabled: true
