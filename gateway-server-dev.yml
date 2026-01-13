@@ -8,3 +8,14 @@ spring:
       group-id: test-group
       key-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
       value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: schedule-service
+              uri: lb://SCHEDULE-SERVICE
+              predicates:
+                - Path=/schedule-service/**
+              filters:
+                - StripPrefix=1
