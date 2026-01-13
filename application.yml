@@ -1,8 +1,4 @@
-spring:
-  data:
-    redis:
-      host: redis
-      port: 6397
+
 logging:
   file:
     name: /app/logs/app.log

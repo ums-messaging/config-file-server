@@ -29,6 +29,10 @@ spring:
         format_sql: true
         show_sql: true
         generate-ddl: true
+  data:
+    redis:
+      host: redis
+      port: 6379
 myapp:
   mail:
     host: test123@test.com
