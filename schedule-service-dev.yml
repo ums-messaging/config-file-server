@@ -1,13 +1,13 @@
 spring:
   kafka:
     bootstrap-servers: kafka:${KAFKA_PORT:9092}
-#    producer:
-#      key-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
-#      value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
-#    consumer:
-#      group-id: test-group
-#      key-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
-#      value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: test-group
+      key-deserializer: org.apache.kafka.common.serialization.StringSerializer
+      value-deserializer: org.apache.kafka.common.serialization.StringSerializer
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:file:/app/db/schedule;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
