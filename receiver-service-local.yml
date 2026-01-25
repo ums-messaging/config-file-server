@@ -8,5 +8,5 @@ myapp:
   mail:
     host: test123456@test.com
     port: 22222
-    username: bkkim12345678
-    password: bkkim12345678
+    username: bkkim1234
+    password: bkkim1234
