@@ -1,11 +1,6 @@
 spring:
-  datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:ums
-    username: sa
-    password:
   kafka:
-    bootstrap-servers: kafka:9094
+    bootstrap-servers: kafka:${KAFKA_PORT:9092}
     producer:
       key-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
       value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
@@ -13,6 +8,11 @@ spring:
       group-id: test-group
       key-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
       value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:/app/db/schedule;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password:
   h2:
     console:
       enabled: true
@@ -35,7 +35,7 @@ spring:
       port: 6379
 myapp:
   mail:
-    host: test123456@test.com
-    port: 22222
-    username: jang3142
-    password: jang3142
+    host: test123@test.com
+    port: 4567
+    username: jang000
+    password: jang000
