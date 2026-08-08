@@ -1,11 +1,6 @@
 spring:
   jackson:
     property-naming-strategy: SNAKE_CASE
-  datasource:
-    driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://localhost:3306/ums
-    username: root
-    password: jang314
   kafka:
     bootstrap-servers: kafka:${KAFKA_PORT:9092}
     producer:
@@ -24,7 +19,7 @@ spring:
   jpa:
 #    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MariaDBDialect
