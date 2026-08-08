@@ -33,9 +33,6 @@ template:
     template-key-prefix: template
     image-key-suffix: images
     attachment-key-suffix: attachment
-
-
-
 target:
   upload:
     bucket: ums-proj-bucket-01
