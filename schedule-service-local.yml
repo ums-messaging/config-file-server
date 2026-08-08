@@ -10,8 +10,6 @@ spring:
       group-id: test-group
       key-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
       value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
-
-
   data:
     redis:
       host: redis
@@ -31,6 +29,12 @@ template:
   upload:
     bucket: ums-proj-bucket-01
     prefix-key: /template
+  email:
+    template-key-prefix: /template
+    image-key-suffix: images
+    attachment-key-suffix: attachment
+
+
 
 target:
   upload:
