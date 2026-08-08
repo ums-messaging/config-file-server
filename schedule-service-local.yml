@@ -30,7 +30,7 @@ template:
     bucket: ums-proj-bucket-01
     prefix-key: /template
   email:
-    template-key-prefix: /template
+    template-key-prefix: template
     image-key-suffix: images
     attachment-key-suffix: attachment
 
