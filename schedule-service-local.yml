@@ -36,8 +36,8 @@ template:
 target:
   upload:
     bucket: ums-proj-bucket-01
-    prfix-key: /target/upload
-    download-key:
+    prfix-upload-key: /target/upload
+    prefix-download-key: /target/upload/downlad
     upload-max-size:
 
 
