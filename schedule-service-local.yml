@@ -4,11 +4,9 @@ myapp:
     port: 22222
     username: jang3142
     password: jang3142
-
 email:
   security:
     owner-password: test
-
 template:
   upload:
     bucket: ums-proj-bucket-01
