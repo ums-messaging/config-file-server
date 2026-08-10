@@ -18,8 +18,10 @@ template:
 target:
   upload:
     bucket: ums-proj-bucket-01
-    prefix-upload-key: /target/upload
-    prefix-download-key: /target/upload/download
-    upload-max-size: 10485760
+    prefix-upload-key: target/upload
+    prefix-download-key: target/upload/download
+    batch-size: 1000
+    file-limit-size: 10485760
+    parition-size: 100
 
 
