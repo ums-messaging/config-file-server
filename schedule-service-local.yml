@@ -20,8 +20,8 @@ target:
     bucket: ums-proj-bucket-01
     prefix-upload-key: target/upload
     prefix-download-key: target/upload/download
-    batch-size: 1000
+    batch-size: 10000
     file-limit-size: 10485760
-    partition-size: 100
+    partition-size: 500
 
 
