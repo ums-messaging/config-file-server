@@ -21,7 +21,7 @@ target:
     prefix-upload-key: target/upload
     prefix-download-key: target/upload/download
     batch-size: 10000
-    file-limit-size: 10485760
+    file-limit-size: 100000000
     partition-size: 500
 
 
