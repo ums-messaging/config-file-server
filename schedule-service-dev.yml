@@ -1,41 +1,27 @@
-spring:
-  kafka:
-    bootstrap-servers: kafka:${KAFKA_PORT:9092}
-    producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
-    consumer:
-      group-id: test-group
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-  datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:file:/app/db/schedule;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-    username: sa
-    password:
-  h2:
-    console:
-      enabled: true
-      settings:
-        web-allow-others: true
-      path: /h2-console
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    hibernate:
-      ddl-auto: create-drop
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.H2Dialect
-        format_sql: true
-        show_sql: true
-        generate-ddl: true
-  data:
-    redis:
-      host: redis
-      port: 6379
 myapp:
   mail:
-    host: test123@test.com
-    port: 4567
-    username: jang000
-    password: jang000
+    host: test123456@test.com
+    port: 22222
+    username: jang3142
+    password: jang3142
+email:
+  security:
+    owner-password: test
+template:
+  upload:
+    bucket: ums-proj-bucket-01
+    prefix-key: /template
+  email:
+    template-key-prefix: template
+    image-key-suffix: images
+    attachment-key-suffix: attachment
+target:
+  upload:
+    bucket: ums-proj-bucket-01
+    prefix-upload-key: target/upload
+    prefix-download-key: target/upload/download
+    batch-size: 10000
+    file-limit-size: 100000000
+    partition-size: 1000
+
+
