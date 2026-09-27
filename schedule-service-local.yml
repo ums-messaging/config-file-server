@@ -18,9 +18,10 @@ template:
 target:
   upload:
     bucket: ums-proj-bucket-01
+    mode: kafka
     prefix-upload-key: target/upload
     prefix-download-key: target/upload/download
-    batch-size: 10000
+    batch-size: 1000
     file-limit-size: 100000000
     partition-size: 1000
 
