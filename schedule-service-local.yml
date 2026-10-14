@@ -34,10 +34,8 @@ email:
     batch-size: 100000
     partition-size: 1000
   template:
-    upload:
-      dir: email/template
-    image:
-      dir: images
+    upload-dir: email/template
+    image-dir: images
     attachments:
       dir: email/template/attachments
   security:
