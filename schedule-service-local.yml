@@ -4,9 +4,6 @@ myapp:
     port: 22222
     username: jang3142
     password: jang3142
-email:
-  security:
-    owner-password: test
 template:
   upload:
     bucket: ums-proj-bucket-01
@@ -25,4 +22,22 @@ target:
     file-limit-size: 100000000
     partition-size: 1000
 
-
+send:
+  request:
+    bucket: ums-proj-bucket-01
+    upload:
+      dir: request/upload
+    file-limit-size: 100000000
+  job:
+    batch-size: 100000
+    partition-size: 1000
+email:
+  template:
+    upload:
+      dir: email/template
+    image:
+      dir: images
+    attachments:
+      dir: email/template/attachments
+  security:
+    owner-password: test
