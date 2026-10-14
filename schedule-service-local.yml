@@ -24,14 +24,15 @@ target:
 
 send:
   request:
-    bucket: ums-proj-bucket-01
     upload:
+      bucket: ums-proj-bucket-01
       dir: request/upload
-    file-limit-size: 100000000
+      file-limit-size: 100000000
+    retry-conunt: 3
+email:
   job:
     batch-size: 100000
     partition-size: 1000
-email:
   template:
     upload:
       dir: email/template
