@@ -36,7 +36,6 @@ email:
   template:
     upload-dir: email/template
     image-dir: images
-    attachments:
-      dir: email/template/attachments
+    attachments-dir: email/template/attachments
   security:
     owner-password: test
