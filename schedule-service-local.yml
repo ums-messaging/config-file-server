@@ -24,11 +24,15 @@ target:
 
 send:
   request:
+    retry-conunt: 3
     upload:
       bucket: ums-proj-bucket-01
       dir: request/upload
       file-limit-size: 100000000
-    retry-conunt: 3
+    channel:
+      email:
+        topic: email-send-requests
+
 email:
   job:
     batch-size: 100000
@@ -36,6 +40,10 @@ email:
   template:
     upload-dir: email/template
     image-dir: images
-    attachments-dir: email/template/attachments
-  security:
-    owner-password: test
+    attachments-dir: email/attachments
+  message:
+    security:
+      encryption-type: ASE-256
+      password-hash: SHA-256
+      permission-mask: NONE
+      owner-password: test
