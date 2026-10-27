@@ -36,7 +36,7 @@ send:
 email:
   job:
     batch-size: 100000
-    partition-size: 200
+    partition-size: 400
     mime-upload-dir: email/mime
   template:
     upload-dir: email/template
