@@ -32,11 +32,10 @@ send:
     channel:
       email:
         topic: email-send-requests
-
 email:
   job:
     batch-size: 100000
-    partition-size: 400
+    partition-size: 20
     mime-upload-dir: email/mime
   template:
     upload-dir: email/template
