@@ -34,7 +34,7 @@ send:
         topic: email-send-requests
 email:
   job:
-    batch-size: 100000
+    batch-size: 1000
     partition-size: 20
     mime-upload-dir: email/mime
   template:
