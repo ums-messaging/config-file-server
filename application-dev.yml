@@ -23,7 +23,7 @@ management:
         include: "*"
   endpoint:
     shutdown:
-      enabled: true
+      access: unrestricted
     health:
       show-details: always
     env:
