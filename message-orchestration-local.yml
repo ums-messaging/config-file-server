@@ -21,7 +21,6 @@ target:
     batch-size: 20000
     file-limit-size: 100000000
     partition-size: 1000
-
 send:
   request:
     retry-count: 3
@@ -35,7 +34,6 @@ send:
         topic: email-send-target-request
 email:
   job:
-    group-key: test
     batch-size: 1000
     partition-size: 20
     mime-upload-dir: email/mime
