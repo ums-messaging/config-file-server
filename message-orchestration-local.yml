@@ -29,11 +29,13 @@ send:
       bucket: ums-proj-bucket-01
       dir: request/upload
       file-limit-size: 100000000
+      batch-size: 1000
     channel:
       email:
-        topic: email-send-requests
+        topic: email-send-target-request
 email:
   job:
+    group-key: @
     batch-size: 1000
     partition-size: 20
     mime-upload-dir: email/mime
