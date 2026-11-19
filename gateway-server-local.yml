@@ -19,3 +19,15 @@ spring:
                 - Path=/schedule-service/**
               filters:
                 - StripPrefix=1
+            - id: message-orchestration
+              uri: lb://MESSAGE-ORCHESTRATION
+              predicates:
+                - Path=/message-orchestration/**
+              filters:
+                - StripPrefix=1
+            - id: email-message-service
+              uri: lb://EMAIL-MESSAGE-SERVICE
+              predicates:
+                - Path=/email-message-service/**
+              filters:
+                - StripPrefix=1
