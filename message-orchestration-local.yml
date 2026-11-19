@@ -8,16 +8,16 @@ spring:
         batch_size: 1000
       order_inserts: true
       show-sql: false
-    datasource:
-      driver-class-name: oracle.jdbc.OracleDriver
-      url: jdbc:oracle:thin:@//localhost:1523/FREEPDB1
-      username: ums
-      password: ums1357
-      hikari:
-        maximum-pool-size: 20
-        minimum-idle: 20
-        connection-timeout: 3000
-        leak-detection-threshold: 30000
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@//localhost:1523/FREEPDB1
+    username: ums
+    password: ums1357
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 20
+      connection-timeout: 3000
+      leak-detection-threshold: 30000
 myapp:
   mail:
     host: test123456@test.com
