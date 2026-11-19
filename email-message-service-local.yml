@@ -37,6 +37,7 @@ email:
     batch-size: 1000
     partition-size: 20
     mime-upload-dir: email/mime
+    group-key: "@"
   template:
     upload-dir: email/template
     image-dir: images
